@@ -1,0 +1,54 @@
+
+//botun za gore-reviews.html
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollToTopButton = document.getElementById("scroll-to-top");
+
+  // Show or hide the button based on scroll position
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollToTopButton.style.display = "block";
+    } else {
+      scrollToTopButton.style.display = "none";
+    }
+  });
+
+  // Scroll smoothly to the top when the button is clicked
+  scrollToTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+      <div
+        id="scroll-to-top"
+        style="
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+        "
+      >
+        <button
+          style="
+            background-color: #1c1c1c;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          "
+          title="Back to top"
+        >
+          ↑
+        </button>
+      </div>
+
+
+
+
+

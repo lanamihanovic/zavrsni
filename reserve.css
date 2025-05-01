@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+
+/* Označeni stol */
+.table.selected {
+  background-color: rgba(250, 50, 50, 0.884) !important;
+  color: white;
+  border: 2px solid rgba(250, 50, 50, 0.884);
+}
+
+/* Aktivni toggle gumb */
+.switch-buttons .active-button {
+  background-color: rgba(250, 50, 50, 0.884);
+}
+
+/* Datumski i vremenski input – bolja vidljivost */
+.reservation-form input[type="date"],
+.reservation-form input[type="time"] {
+  background-color: #f9f9f9;
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Centriraj order potvrdu */
+#order-confirmation {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #252525;
+  padding-top: 20px;
+}
+
+
+.switch-buttons {
+  text-align: center;
+  margin: 20px;
+}
+
+.switch-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #252525;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.switch-buttons button:hover {
+  background-color: #333;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.p2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 30px;
+  text-align: center;
+}
+
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.restaurant {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  height: 55vh;
+  border: 1px solid black;
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #252525;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table:hover {
+  background-color: #cbcbcb;
+  color: #252525;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.table-id {
+  font-size: 10px;
+}
+
+.table:nth-child(1) { top: 15%; left: 10%; }
+.table:nth-child(2) { top: 15%; left: 40%; }
+.table:nth-child(3) { top: 15%; left: 70%; }
+.table:nth-child(4) { top: 40%; left: 10%; }
+.table:nth-child(5) { top: 40%; left: 40%; }
+.table:nth-child(6) { top: 40%; left: 70%; }
+.table:nth-child(7) { top: 65%; left: 10%; }
+.table:nth-child(8) { top: 65%; left: 40%; }
+.table:nth-child(9) { top: 65%; left: 70%; }
+
+.exit, .reception, .balcony {
+  position: absolute;
+  font-size: 12px;
+  font-weight: lighter;
+  background-color: #e1e1e1;
+  padding: 4px 7px;
+  border-radius: 5px;
+  color: black;
+}
+.exit { top: 10px; left: 90%; transform: translateX(-100%); }
+.reception { top: 50%; left: 85%; transform: translateY(-50%); }
+.balcony { top: 90%; left: 50%; transform: translateX(-50%); }
+
+.reservation-form {
+  flex: 1;
+  max-width: 450px;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #fffefe;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.reservation-form label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #252525;
+}
+
+.reservation-form button {
+  padding: 12px;
+  border: none;
+  background-color: #252525;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.reservation-form button:hover {
+  background-color: #333;
+}
+
+#order-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .reservation-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant,
+  .reservation-form {
+    width: 90%;
+    max-width: none;
+  }
+}
