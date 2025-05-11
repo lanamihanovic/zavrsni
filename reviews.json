@@ -1,0 +1,404 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "user": "Carlos Hernandez",
+      "rating": 2,
+      "comment": "Great ambiance, but the portions could be a bit larger.",
+      "date": "2024-02-02",
+      "userImage": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 2,
+      "user": "Liam O'Connor",
+      "rating": 3,
+      "comment": "The flavors were absolutely divine. Highly recommend the tasting menu.",
+      "date": "2024-03-03",
+      "userImage": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "id": 3,
+      "user": "Amara Singh",
+      "rating": 4,
+      "comment": "Good presentation, but the dessert was too sweet for my taste.",
+      "date": "2024-04-04",
+      "userImage": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+      "id": 4,
+      "user": "Zhang Wei",
+      "rating": 5,
+      "comment": "Impressive variety of dishes. The sushi platter is a must-try.",
+      "date": "2024-05-05",
+      "userImage": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 5,
+      "user": "Sophia Martinez",
+      "rating": 1,
+      "comment": "A culinary masterpiece. Will come back for sure!",
+      "date": "2024-06-06",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 6,
+      "user": "Ethan Brown",
+      "rating": 2,
+      "comment": "Lovely experience but the wait time was a bit long.",
+      "date": "2024-07-07",
+      "userImage": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 7,
+      "user": "Isabella Rossi",
+      "rating": 3,
+      "comment": "Authentic flavors and great service. A hidden gem!",
+      "date": "2024-08-08",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 8,
+      "user": "Lucas Smith",
+      "rating": 4,
+      "comment": "Good food but overpriced for what you get.",
+      "date": "2024-09-09",
+      "userImage": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 9,
+      "user": "Chloe M\u00fcller",
+      "rating": 5,
+      "comment": "Very cozy atmosphere and attentive staff.",
+      "date": "2024-10-10",
+      "userImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 10,
+      "user": "Noah Kim",
+      "rating": 1,
+      "comment": "An absolute delight for the taste buds.",
+      "date": "2024-11-11",
+      "userImage": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 11,
+      "user": "Mia Williams",
+      "rating": 2,
+      "comment": "The ramen was the highlight of the meal.",
+      "date": "2024-12-12",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 12,
+      "user": "Oliver Davis",
+      "rating": 3,
+      "comment": "The service was slow, but the food was good.",
+      "date": "2024-01-13",
+      "userImage": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "id": 13,
+      "user": "Ava Patel",
+      "rating": 4,
+      "comment": "Absolutely worth every penny.",
+      "date": "2024-02-14",
+      "userImage": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 14,
+      "user": "Elijah Robinson",
+      "rating": 5,
+      "comment": "Great food, but the ambiance could be better.",
+      "date": "2024-03-15",
+      "userImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 15,
+      "user": "Aria Thompson",
+      "rating": 1,
+      "comment": "Incredible fusion of flavors!",
+      "date": "2024-04-16",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 16,
+      "user": "Henry Wright",
+      "rating": 2,
+      "comment": "Loved the sushi rolls and sake pairing.",
+      "date": "2024-05-17",
+      "userImage": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+      "id": 17,
+      "user": "Olivia Garcia",
+      "rating": 3,
+      "comment": "Decent food but not memorable.",
+      "date": "2024-06-18",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 18,
+      "user": "Sebastian Baker",
+      "rating": 4,
+      "comment": "Best restaurant experience in years!",
+      "date": "2024-07-19",
+      "userImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 19,
+      "user": "Sophia Evans",
+      "rating": 5,
+      "comment": "Really enjoyed the appetizers and desserts.",
+      "date": "2024-08-20",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 20,
+      "user": "Daniel Carter",
+      "rating": 1,
+      "comment": "Fantastic service and an unforgettable dining experience!",
+      "date": "2024-09-21",
+      "userImage": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "id": 21,
+      "user": "Victoria Nguyen",
+      "rating": 2,
+      "comment": "Great ambiance, but the portions could be a bit larger.",
+      "date": "2024-10-22",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 22,
+      "user": "James Wilson",
+      "rating": 3,
+      "comment": "The flavors were absolutely divine. Highly recommend the tasting menu.",
+      "date": "2024-11-23",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 23,
+      "user": "Natalie Walker",
+      "rating": 4,
+      "comment": "Good presentation, but the dessert was too sweet for my taste.",
+      "date": "2024-12-24",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 24,
+      "user": "Benjamin Hill",
+      "rating": 5,
+      "comment": "Impressive variety of dishes. The sushi platter is a must-try.",
+      "date": "2024-01-25",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 25,
+      "user": "Lily King",
+      "rating": 1,
+      "comment": "A culinary masterpiece. Will come back for sure!",
+      "date": "2024-02-26",
+      "userImage": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "id": 26,
+      "user": "Alexander Parker",
+      "rating": 2,
+      "comment": "Lovely experience but the wait time was a bit long.",
+      "date": "2024-03-27",
+      "userImage": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "id": 27,
+      "user": "Hannah Green",
+      "rating": 3,
+      "comment": "Authentic flavors and great service. A hidden gem!",
+      "date": "2024-04-28",
+      "userImage": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 28,
+      "user": "Matthew Lee",
+      "rating": 4,
+      "comment": "Good food but overpriced for what you get.",
+      "date": "2024-05-01",
+      "userImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 29,
+      "user": "Charlotte Adams",
+      "rating": 5,
+      "comment": "Very cozy atmosphere and attentive staff.",
+      "date": "2024-06-02",
+      "userImage": "https://randomuser.me/api/portraits/women/1.jpg"
+    },
+    {
+      "id": 30,
+      "user": "Jacob Turner",
+      "rating": 1,
+      "comment": "An absolute delight for the taste buds.",
+      "date": "2024-07-03",
+      "userImage": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "id": 31,
+      "user": "Grace Clark",
+      "rating": 2,
+      "comment": "The ramen was the highlight of the meal.",
+      "date": "2024-08-04",
+      "userImage": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "id": 32,
+      "user": "David Hall",
+      "rating": 3,
+      "comment": "The service was slow, but the food was good.",
+      "date": "2024-09-05",
+      "userImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 33,
+      "user": "Ella Young",
+      "rating": 4,
+      "comment": "Absolutely worth every penny.",
+      "date": "2024-10-06",
+      "userImage": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "id": 34,
+      "user": "Andrew Scott",
+      "rating": 5,
+      "comment": "Great food, but the ambiance could be better.",
+      "date": "2024-11-07",
+      "userImage": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "id": 35,
+      "user": "Madison Moore",
+      "rating": 1,
+      "comment": "Incredible fusion of flavors!",
+      "date": "2024-12-08",
+      "userImage": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 36,
+      "user": "Christopher Harris",
+      "rating": 2,
+      "comment": "Loved the sushi rolls and sake pairing.",
+      "date": "2024-01-09",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 37,
+      "user": "Samantha Allen",
+      "rating": 3,
+      "comment": "Decent food but not memorable.",
+      "date": "2024-02-10",
+      "userImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 38,
+      "user": "Joshua Mitchell",
+      "rating": 4,
+      "comment": "Best restaurant experience in years!",
+      "date": "2024-03-11",
+      "userImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 39,
+      "user": "Olivia Rivera",
+      "rating": 5,
+      "comment": "Really enjoyed the appetizers and desserts.",
+      "date": "2024-04-12",
+      "userImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 40,
+      "user": "Nathan Ward",
+      "rating": 1,
+      "comment": "Fantastic service and an unforgettable dining experience!",
+      "date": "2024-05-13",
+      "userImage": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 41,
+      "user": "Victoria Kelly",
+      "rating": 2,
+      "comment": "Great ambiance, but the portions could be a bit larger.",
+      "date": "2024-06-14",
+      "userImage": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 42,
+      "user": "Ryan Reed",
+      "rating": 3,
+      "comment": "The flavors were absolutely divine. Highly recommend the tasting menu.",
+      "date": "2024-07-15",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 43,
+      "user": "Isabelle Brooks",
+      "rating": 4,
+      "comment": "Good presentation, but the dessert was too sweet for my taste.",
+      "date": "2024-08-16",
+      "userImage": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+      "id": 44,
+      "user": "Aaron Cooper",
+      "rating": 5,
+      "comment": "Impressive variety of dishes. The sushi platter is a must-try.",
+      "date": "2024-09-17",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+      "id": 45,
+      "user": "Mason Foster",
+      "rating": 1,
+      "comment": "A culinary masterpiece. Will come back for sure!",
+      "date": "2024-10-18",
+      "userImage": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 46,
+      "user": "Sophia Bell",
+      "rating": 2,
+      "comment": "Lovely experience but the wait time was a bit long.",
+      "date": "2024-11-19",
+      "userImage": "https://randomuser.me/api/portraits/women/5.jpg"
+    },
+    {
+      "id": 47,
+      "user": "William Cook",
+      "rating": 3,
+      "comment": "Authentic flavors and great service. A hidden gem!",
+      "date": "2024-12-20",
+      "userImage": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "id": 48,
+      "user": "Ava Powell",
+      "rating": 4,
+      "comment": "Good food but overpriced for what you get.",
+      "date": "2024-01-21",
+      "userImage": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "id": 49,
+      "user": "Michael Watson",
+      "rating": 5,
+      "comment": "Very cozy atmosphere and attentive staff.",
+      "date": "2024-02-22",
+      "userImage": "https://randomuser.me/api/portraits/men/2.jpg"
+    },
+    {
+      "id": 50,
+      "user": "Emily Johnson",
+      "rating": 1,
+      "comment": "An absolute delight for the taste buds.",
+      "date": "2024-03-23",
+      "userImage": "https://randomuser.me/api/portraits/women/4.jpg"
+    }
+  ]
+}
