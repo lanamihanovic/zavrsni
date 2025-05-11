@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <script type="module" src="login.js"></script>
+  <link rel="icon" href="slike/logozavrsni.png" type="image/png" />
+  <link rel="stylesheet" href="main.css" />
+ 
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+    .container { margin-top: -80px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+    .form-box { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); width: 350px; text-align: center; }
+    .form-box h2 { margin-bottom: 20px; color: #1c1c1c; }
+    .form-box input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; }
+    #file-input { display: none; }
+    .custom-file-label { background-color: #1c1c1c; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer; display: inline-block; font-size: 16px; margin-top: 10px; }
+    .file-name { display: block; font-size: 14px; color: #555; margin-top: 5px; }
+    .submit-btn { background-color: #1c1c1c; color: white; border: none; padding: 10px; width: 100%; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px; }
+    .submit-btn:hover { background-color: #333; }
+    .login-img { width: 25vw; height: 35vh; }
+    .img-container { width: auto; height: auto; display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 15px; }
+    .delete-btn { background-color: #e74c3c; color: white; border: none; padding: 6px 10px; border-radius: 5px; margin-top: 5px; cursor: pointer; }
+    .delete-btn:hover { background-color: #c0392b; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html"><img src="slike/logozavrsni.png" alt="404" class="navlogo"/></a>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="/index.html#menu">Menu</a></li>
+      <li><a href="reserve.html">Reserve & Order</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <div class="img-container">
+    <img src="slike/login.jpeg" alt="404" class="login-img">
+    <img src="slike/login2.jpeg" alt="404" class="login-img">
+    <img src="slike/login3.jpeg" alt="404" class="login-img">
+  </div>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>Login</h2>
+      <form id="login-form" enctype="multipart/form-data">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <label for="file-input" class="custom-file-label">Choose a profile picture</label>
+        <span class="file-name">No file chosen</span>
+        <input type="file" id="file-input" name="profile_picture">
+        <input type="submit" value="Submit" class="submit-btn">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="supabaseClient.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    .form-box { max-width: 400px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .form-box h2 { text-align: center; }
+    .form-box input { width: 100%; padding: 10px; margin: 10px 0; }
+    .submit-btn { background: black; color: white; border: none; padding: 10px; width: 100%; border-radius: 5px; }
+    .submit-btn:hover { background: #333; }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Registracija</h2>
+    <form id="register-form">
+      <input type="text" id="username" placeholder="Korisničko ime" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Lozinka" required />
+      <label>Profilna slika:</label>
+      <input type="file" id="avatar" accept="image/*" />
+      <button type="submit" class="submit-btn">Registriraj se</button>
+    </form>
+  </div>
+
+  <script>
+    const supabase = window.supabase;
+
+    document.getElementById('register-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const username = document.getElementById('username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const avatarFile = document.getElementById('avatar').files[0];
+
+      let avatar_b64 = null;
+      if (avatarFile) {
+        avatar_b64 = await toBase64(avatarFile);
+      }
+
+      // 1. Registracija korisnika
+      const { data: signUpData, error: signUpError } = await supabase.auth.signUp({
+        email,
+        password
+      });
+
+      if (signUpError) {
+        alert('Greška pri registraciji: ' + signUpError.message);
+        return;
+      }
+
+      const user = signUpData.user;
+
+      // 2. Dodavanje u tablicu "users"
+      const { error: insertError } = await supabase.from('users').insert([{
+        id: user.id,
+        email: user.email,
+        username,
+        avatar_b64,
+        password_hash: 'registriran_korisnik'
+      }]);
+
+      if (insertError) {
+        alert('Greška pri spremanju profila: ' + insertError.message);
+        return;
+      }
+
+      alert('Registracija uspješna!');
+      window.location.href = 'login.html';
+    });
+
+    function toBase64(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result.split(',')[1]);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+    }
+  </script>
+</body>
+</html>
