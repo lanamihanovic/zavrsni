@@ -1,0 +1,107 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sidebar .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1c1c1c;
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  color: #1c1c1c;
+  margin-top: 10px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar nav li {
+  margin: 10px 0;
+}
+
+.sidebar nav .nav-btn {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar nav .nav-btn:hover,
+.sidebar nav .nav-btn.active {
+  background-color: #1c1c1c;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+.dashboard-section {
+  display: none;
+}
+
+.dashboard-section.active {
+  display: block;
+}
+
+.dashboard-section h2 {
+  font-size: 28px;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1c1c1c;
+  padding-bottom: 10px;
+}
+
+.dashboard-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-section li {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.nav-btn.active-button {
+  background-color: #ddd;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+}

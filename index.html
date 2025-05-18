@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kaiseki</title>
+    <link rel="icon" href="slike/logozavrsni.png" type="image/png" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#main"
+        ><img src="slike/logozavrsni.png" alt="404" class="navlogo"
+      /></a>
+      <ul class="navlinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="reserve.html">Reserve & Order</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+
+      </ul>
+    </nav>
+
+    <main>
+      <div id="header">
+        <img src="slike/second.jpeg" alt="404" class="slika1" />
+        <p>懐 <br />石</p>
+        <img src="slike/sixth.jpeg" alt="404" class="slika2" />
+      </div>
+
+      <div id="about">
+        <p>About</p>
+        <p>
+          Experience the essence of Japanese dining at our restaurant, where
+          tradition meets innovation. Our menu offers handcrafted sushi,
+          sashimi, and warm bowls of ramen, prepared with authentic techniques
+          and high-quality ingredients. Each dish celebrates the balance of
+          flavors and textures that define Japanese cuisine. In a serene,
+          elegant setting inspired by Japanese culture, we invite you to savor
+          every bite and enjoy a memorable, immersive dining experience.
+        </p>
+        <div class="slikeabout">
+          <img src="slike/seventh.jpg" alt="404" />
+          <img src="slike/fifth.jpeg" alt="404" />
+          <img src="slike/fourth.jpeg" alt="404" />
+          <img src="slike/eighth.jpeg" alt="404" />
+        </div>
+      </div>
+
+      <div id="menu">
+        <p class="menu">Menu</p>
+        <div class="menu-container">
+          <section class="menu-section">
+            <h2>STARTERS</h2>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Edamame</h3>
+                <p>Steamed young soybeans with sea salt.</p>
+                <p class="tags">🥗 Vegetarian</p>
+              </div>
+              <p class="price">$5.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Miso Soup</h3>
+                <p>
+                  Traditional Japanese soup with tofu, seaweed, and green
+                  onions.
+                </p>
+                <p class="tags">🥗 Vegetarian</p>
+              </div>
+              <p class="price">$4.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Agedashi Tofu</h3>
+                <p>Fried tofu served in a warm dashi broth.</p>
+                <p class="tags">🥗 Vegetarian</p>
+              </div>
+              <p class="price">$6.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Gyoza</h3>
+                <p>Pan-fried dumplings filled with pork and vegetables.</p>
+                <p class="tags">🐷 Pork</p>
+              </div>
+              <p class="price">$7.00</p>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h2>MAIN COURSE</h2>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Teriyaki Chicken</h3>
+                <p>Grilled chicken with a sweet teriyaki glaze.</p>
+                <p class="tags">🍗 Mild</p>
+              </div>
+              <p class="price">$12.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Sushi Platter</h3>
+                <p>Assortment of fresh nigiri and sushi rolls.</p>
+                <p class="tags">🍣 Fish</p>
+              </div>
+              <p class="price">$18.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Tempura Udon</h3>
+                <p>
+                  Thick udon noodles in broth with tempura shrimp and
+                  vegetables.
+                </p>
+                <p class="tags">🍤 Seafood</p>
+              </div>
+              <p class="price">$13.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Salmon Sashimi</h3>
+                <p>Freshly sliced salmon served with soy sauce and wasabi.</p>
+                <p class="tags">🍣 Fish</p>
+              </div>
+              <p class="price">$15.00</p>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h2>DESSERTS</h2>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Mochi Ice Cream</h3>
+                <p>Chewy rice cake filled with ice cream (various flavors).</p>
+              </div>
+              <p class="price">$5.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Matcha Cheesecake</h3>
+                <p>Japanese-style cheesecake with matcha flavor.</p>
+              </div>
+              <p class="price">$6.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Yuzu Sorbet</h3>
+                <p>Refreshing sorbet made from Japanese yuzu citrus.</p>
+              </div>
+              <p class="price">$4.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Tempura Ice Cream</h3>
+                <p>Deep-fried ice cream with a crispy coating.</p>
+              </div>
+              <p class="price">$7.00</p>
+            </div>
+          </section>
+
+          <section class="menu-section">
+            <h2>DRINKS</h2>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Sake</h3>
+                <p>Traditional Japanese rice wine.</p>
+              </div>
+              <p class="price">$8.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Green Tea</h3>
+                <p>Hot Japanese green tea.</p>
+              </div>
+              <p class="price">$3.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Plum Wine</h3>
+                <p>Sweet Japanese wine made from plums.</p>
+              </div>
+              <p class="price">$7.00</p>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h3>Ramune</h3>
+                <p>Japanese carbonated soft drink with a marble cap.</p>
+              </div>
+              <p class="price">$4.00</p>
+            </div>
+          </section>
+        </div>
+        <a href="reserve.html">
+          <button class="btnreserve">Reserve/Order</button>
+        </a>
+      </div>
+      <div id="reviews" class="reviews-section">
+        <h2>Reviews</h2>
+        <ul id="reviews-list" class="reviews-preview-list"></ul> 
+        <a href="reviews.html">
+          <button class="btnreview">View more</button>
+        </a>
+      </div>
+      
+      <div
+        id="scroll-to-top"
+        style="
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+        "
+      >
+        <button
+          style="
+            background-color: #1c1c1c;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          "
+          title="Back to top"
+        >
+          ↑
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <div id="lijevo">
+        <img src="slike/logozavrsni.png" alt="404" />
+        <p>
+          OPENING HOURS <br />
+          Mon - Fri: 11am - 9pm <br />
+          Saturday: 11am - 10pm <br />Sunday: 10am - 1pm
+        </p>
+      </div>
+      <div id="desno">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2405.265443680331!2d-0.12885868411618333!3d51.50735021283963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760e4c24f1dbbb%3A0xd5b44cd7fcbba2b9!2sJapan%20Centre!5e0!3m2!1sen!2suk!4v1633673220207!5m2!1sen!2suk"
+          width="400"
+          height="325"
+          style="border: 0; border-radius: 12px"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+
+        <div class="social-media">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fab fa-instagram social-icon"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter social-icon"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook social-icon"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kaiseki</title>
+  <link rel="icon" href="slike/logozavrsni.png" type="image/png" />
+
+  <link rel="stylesheet" href="reserve.css" />
+  <link rel="stylesheet" href="main.css" />
+
+  <script defer src="reserve.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#"><img src="slike/logozavrsni.png" alt="Logo" class="navlogo" /></a>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="reserve.html">Reserve & Order</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <div class="switch-buttons">
+    <button onclick="showSection('reserve')">Reserve</button>
+    <button onclick="showSection('order')">Order</button>
+  </div>
+
+  <div id="reserve" class="section active">
+    <p class="p2">Reserve a table:</p>
+    <div class="reservation-container">
+      <div class="restaurant">
+        <div class="table" data-id="1"><span class="table-id">1</span></div>
+        <div class="table" data-id="2"><span class="table-id">2</span></div>
+        <div class="table" data-id="3"><span class="table-id">3</span></div>
+        <div class="table" data-id="4"><span class="table-id">4</span></div>
+        <div class="table" data-id="5"><span class="table-id">5</span></div>
+        <div class="table" data-id="6"><span class="table-id">6</span></div>
+        <div class="table" data-id="7"><span class="table-id">7</span></div>
+        <div class="table" data-id="8"><span class="table-id">8</span></div>
+        <div class="table" data-id="9"><span class="table-id">9</span></div>
+        <div class="exit">Exit</div>
+        <div class="reception">Reception</div>
+        <div class="balcony">Balcony</div>
+      </div>
+
+      <form class="reservation-form" action="reservation.php">
+        <p id="selected-table" class="hidden">
+        <span id="table-number"></span>
+        </p>
+        <input type="hidden" id="table-id" name="table-id" />
+
+        <input type="text" id="name" name="name" placeholder="Name:" required />
+        <input type="email" id="email" name="email" placeholder="Email:" required />
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+        <label for="time">Time:</label>
+        <input type="time" id="time" min="08:00" max="20:00" name="time" required />
+        <label for="guests">Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" required />
+        <textarea name="note" placeholder="Enter any special requests..."></textarea>
+
+        <button type="submit">Reserve</button>
+      </form>
+    </div>
+  </div>
+
+<div id="order" class="section">
+  <p class="p2">Order food:</p>
+  <form id="order-form">
+    <label for="dish">Select Dish:</label>
+    <select id="dish" name="dish">
+      <option value="Edamame" data-price="5.00">Edamame ($5.00)</option>
+      <option value="Miso Soup" data-price="4.00">Miso Soup ($4.00)</option>
+      <option value="Agedashi Tofu" data-price="6.00">Agedashi Tofu ($6.00)</option>
+      <option value="Gyoza" data-price="7.00">Gyoza ($7.00)</option>
+      <option value="Teriyaki Chicken" data-price="12.00">Teriyaki Chicken ($12.00)</option>
+      <option value="Sushi Platter" data-price="18.00">Sushi Platter ($18.00)</option>
+      <option value="Tempura Udon" data-price="13.00">Tempura Udon ($13.00)</option>
+      <option value="Salmon Sashimi" data-price="15.00">Salmon Sashimi ($15.00)</option>
+      <option value="Mochi Ice Cream" data-price="5.00">Mochi Ice Cream ($5.00)</option>
+      <option value="Matcha Cheesecake" data-price="6.00">Matcha Cheesecake ($6.00)</option>
+      <option value="Yuzu Sorbet" data-price="4.00">Yuzu Sorbet ($4.00)</option>
+      <option value="Tempura Ice Cream" data-price="7.00">Tempura Ice Cream ($7.00)</option>
+      <option value="Sake" data-price="8.00">Sake ($8.00)</option>
+      <option value="Green Tea" data-price="3.00">Green Tea ($3.00)</option>
+      <option value="Plum Wine" data-price="7.00">Plum Wine ($7.00)</option>
+      <option value="Ramune" data-price="4.00">Ramune ($4.00)</option>
+    </select>
+
+    <button type="button" onclick="addToCart()">Add to Cart</button>
+    <hr>
+
+    <ul id="cart-list"></ul>
+    <p>Total: $<span id="total-price">0.00</span></p>
+
+    <input type="text" id="order-name" name="name" placeholder="Name:" required />
+    <input type="email" id="order-email" name="email" placeholder="Email:" required />
+
+    <label for="order-location">Delivery Location:</label>
+    <input type="text" id="order-location" name="delivery_location" placeholder="e.g., Room 101" required />
+
+    <label for="order-time">Delivery Time:</label>
+    <input type="time" id="order-time" name="delivery_time" required />
+
+    <label for="order-note">Special Request:</label>
+    <textarea id="order-note" name="note" placeholder="Enter any special requests..."></textarea>
+
+    <button type="submit">Place Order</button>
+  </form>
+</div>
+
+</body>
+</html>

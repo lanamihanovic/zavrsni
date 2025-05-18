@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="main.css">
+  <script defer src="profile.js"></script>
+  <style>
+    .account-details {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .account-details img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #1c1c1c;
+    }
+
+    .account-details p {
+      font-size: 16px;
+      color: #333;
+      margin: 0;
+    }
+
+    .account-details button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    #logout-btn {
+      background-color: #1c1c1c;
+      color: white;
+    }
+
+    #delete-account-btn {
+      background-color: #e74c3c;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#main"><img src="slike/logozavrsni.png" alt="Logo" class="navlogo"></a>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+      <li><a href="reserve.html">Reserve & Order</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <div class="profile">
+        <img id="user-image" src="slike/default-avatar.png" alt="User Avatar">
+        <h3 id="user-name">User</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><button class="nav-btn" data-section="reservations">Reservations</button></li>
+          <li><button class="nav-btn" data-section="orders">Orders</button></li>
+          <li><button class="nav-btn" data-section="reviews">Reviews</button></li>
+          <li><button class="nav-btn" data-section="account">Account</button></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="content">
+      <div id="reservations" class="dashboard-section active">
+        <h2>Your Reservations</h2>
+        <ul id="reservation-list"><li>Loading...</li></ul>
+      </div>
+
+      <div id="orders" class="dashboard-section">
+        <h2>Your Orders</h2>
+        <ul id="order-list"><li>Loading...</li></ul>
+      </div>
+
+      <div id="reviews" class="dashboard-section">
+        <h2>Your Reviews</h2>
+        <ul id="review-list"><li>Loading...</li></ul>
+      </div>
+
+      <div id="account" class="dashboard-section">
+        <h2>Your Account Details</h2>
+        <div class="account-details">       
+          <p><strong>Username:</strong> <span id="account-username">Loading...</span></p>
+          <p><strong>Email:</strong> <span id="account-email">Loading...</span></p>
+          <p><strong>Created At:</strong> <span id="account-created">Loading...</span></p>
+          <button id="logout-btn">Logout</button>
+          <button id="delete-account-btn">Delete Account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
